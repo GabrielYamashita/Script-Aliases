@@ -8,11 +8,12 @@ function new { mkdir $args ; Set-Location ".\$args" ; Clear-Host }
 # Volta para o diretório anterior:
 function back { Set-Location ".." ; Clear-Host }
 
-# Funções do github:
+# Funções do Github:
 
-# Settings
+# Settings:
 $USER = 'USER' # Substituir USER pelo user do github
 $TOKEN = 'TOKEN' # Substituir TOKEN pelo token gerado.
+
 $Pass = "$($USER):$($TOKEN)"
 $Base64Token = [System.Convert]::ToBase64String([char[]]$Pass);
 $Headers = @{
