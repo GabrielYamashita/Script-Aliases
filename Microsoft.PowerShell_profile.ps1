@@ -8,6 +8,11 @@ function new { mkdir $args ; Set-Location ".\$args" ; Clear-Host }
 # Volta para o diretório anterior:
 function back { Set-Location ".." ; Clear-Host }
 
+
+# VS Code:
+function vs { Set-Location "C:\Users\gabri\Documents\YACOMP" ; code . ; Write-Host "VS Code has been opened!" -ForegroundColor green }
+
+
 # Funções do Github:
 
 # Settings:
